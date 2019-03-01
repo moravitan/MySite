@@ -1,0 +1,119 @@
+body {
+	margin: 0;
+	background: Black;
+	font-family: 'Calibri';
+	font-size: 20px;
+	font-weight: 800;
+	color: white;
+}
+
+#menu
+{
+	background: #55d6aa;
+	margin: 0 auto;
+	width: 100%;
+	float: inline-start;
+	position: fixed;
+	
+}
+
+.logo{
+	padding-left: 100px;
+	width: 50px;
+}
+
+#menu::after {
+  content: '';
+  display: table;
+	clear: both;
+}
+
+
+#menu ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu li {
+  display: inline-block;
+	margin-left: 70px;
+	padding-right: 5px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	position: relative;
+}
+
+#menu a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+	font-size: 14px;
+}
+
+#menu a:hover {
+  color: #000;
+}
+
+#menu a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+  position: absolute;
+  top: 0;
+  width: 0%;
+	transition: all ease-in-out 250ms;
+}
+
+#menu a:hover::before {
+  width: 100%;
+}
+
+#about{
+	padding: 100px;
+}
+
+.section {
+	padding: 50px;
+  line-height: 0.5;
+	text-align: center;
+}
+
+.section span{
+  display: inline-block;
+	position: sticky;
+	 
+}
+
+
+.section span:before, .section span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-top: 3px solid #55d6aa;
+  top: 10px;
+	width: 700px;
+
+}
+
+.section span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.section span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+
+.section p{
+	padding-top: 100px; 
+}
+
+#playlist p a{
+	color: white;
+}
+
+
