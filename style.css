@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background: Black;
+	background: white;
 	font-family: 'Calibri';
 	font-size: 20px;
 	font-weight: 800;
@@ -79,12 +79,12 @@ body {
 	padding: 50px;
   line-height: 0.5;
 	text-align: center;
+	color: #444;
 }
 
 .section span{
   display: inline-block;
-	position: sticky;
-	 
+	position: relative; 
 }
 
 
@@ -113,7 +113,7 @@ body {
 }
 
 #playlist p a{
-	color: white;
+	color: #444;
 }
 
 
@@ -142,7 +142,11 @@ body {
 	background: url(https://www.nps.gov/common/uploads/stories/images/nri/20151216/articles/C6E16F5A-1DD8-B71B-0BAB45B9358DD9C8/C6E16F5A-1DD8-B71B-0BAB45B9358DD9C8.jpg)
 }
 
-
+#like iframe {
+	padding: 50px;
+	padding-bottom: 0px;
+	color: black;
+}
 
 input[type=text]{
   width: 40%;
