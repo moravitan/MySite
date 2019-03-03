@@ -14,6 +14,7 @@ body {
 	width: 100%;
 	float: inline-start;
 	position: fixed;
+	overflow: hidden;
 	
 }
 
@@ -26,6 +27,7 @@ body {
   content: '';
   display: table;
 	clear: both;
+
 }
 
 
@@ -53,7 +55,8 @@ body {
 }
 
 #menu a:hover {
-  color: #000;
+	color: #000;
+	
 }
 
 #menu a::before {
@@ -68,7 +71,7 @@ body {
 }
 
 #menu a:hover::before {
-  width: 100%;
+	width: 100%;
 }
 
 #about{
@@ -82,7 +85,7 @@ body {
 	color: #444;
 }
 
-.section span{
+.section span:not(.dot){
   display: inline-block;
 	position: relative; 
 }
@@ -95,6 +98,7 @@ body {
   border-top: 3px solid #55d6aa;
   top: 10px;
 	width: 700px;
+	overflow: hidden;
 
 }
 
@@ -112,6 +116,7 @@ body {
 	padding-top: 100px; 
 }
 
+
 #playlist p a{
 	color: #444;
 }
@@ -124,23 +129,6 @@ body {
 	width: 100px;
 }
 
-.rollover {
-	overflow: hidden;
-	position: relative;
-	display: block;
-	width: 400px;
-	height: 300px;
-	background-image: url("QR.png");
-	-webkit-transition: all .7s ease-in-out;
-	-moz-transition: all .7s ease-in-out;
-	-o-transition: all .7s ease-in-out;
-	transition: all .7s ease-in-out;
-}
-
-.rollover:hover {
-	overflow: hidden;
-	background: url(https://www.nps.gov/common/uploads/stories/images/nri/20151216/articles/C6E16F5A-1DD8-B71B-0BAB45B9358DD9C8/C6E16F5A-1DD8-B71B-0BAB45B9358DD9C8.jpg)
-}
 
 #like iframe {
 	padding: 50px;
@@ -152,6 +140,8 @@ body {
 	padding: 0px;
 	padding-bottom: 0;
 }
+
+/* e-mail form style */
 
 input[type=text]{
   width: 40%;
