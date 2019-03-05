@@ -1,5 +1,9 @@
 html { overflow-x: hidden; }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	background: white;
@@ -106,7 +110,8 @@ body {
 
 .section span:before {
   right: 100%;
-  margin-right: 15px;
+	margin-right: 15px;
+	position: absolute;
 }
 .section span:after {
   left: 100%;
@@ -124,7 +129,7 @@ body {
 }
 
 
-#qrcoder img{
+#qrcoder img .QR{
 	padding: 90px;
 	padding-bottom: 0px;;
 	height: 100px;
@@ -170,12 +175,16 @@ textarea#styled {
 	background-repeat: no-repeat;
 }
 
+#photos {
+
+	align-items: center;
+}
+
 #photos img {
-	height: 90%;
-	width: 90%;
+	height: 80%;
+	width: 80%;
 	border-radius: 50%;
-	/*padding: 10%;
-	margin-right: 24%;*/
+	margin-left: 15%;
 }
 
 #photos img:hover{
@@ -183,17 +192,12 @@ textarea#styled {
 	position: sticky;
 }
 
-#photos img {
-	margin-right: 50%;
-	margin-bottom: 20%;
-
-}
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
-  width: 40%;
+  width: 33.33%;
 	padding: 0%;
-	flex: 40%;
+	flex: 33.33%;
 
 }
 
@@ -206,7 +210,7 @@ textarea#styled {
 
 .row {
 	display: flex;
-	margin: 4%;
+	
 }
 
 
