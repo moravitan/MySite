@@ -187,11 +187,6 @@ textarea#styled {
 	margin-left: 15%;
 }
 
-#photos img:hover{
-	opacity: 0.8;
-	position: sticky;
-}
-
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
