@@ -93,18 +93,19 @@ body {
 
 .section span{
   display: inline-block;
-	position: relative; 
+	position: relative;
+	
 }
 
 
 .section span:before, .section span:after {
   content: "";
-  position: absolute;
+	position: absolute;
   height: 5px;
   border-top: 3px solid #55d6aa;
   top: 10px;
 	width: 700px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 
 }
 
@@ -118,11 +119,17 @@ body {
   margin-left: 15px;
 }
 
-
 .section p{
 	padding-top: 100px; 
 }
 
+#about h2{
+ padding-bottom: 40px;
+}
+
+#about p{
+	padding: 0;
+}
 
 #playlist p a{
 	color: #444;
@@ -214,3 +221,11 @@ textarea#styled {
     width:100%;
   }
 } 
+
+
+
+#spa #spaP {
+	padding: 0;
+	padding-bottom: 0;
+	text-align: left;
+}
