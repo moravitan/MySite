@@ -100,22 +100,17 @@
 
 
 <script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
+  $(function(){
+    $("#nav a").click(function(e){
+      e.preventDefault();
+      $('html,body').scrollTo(this.hash,this.hash); 
+    });
   });
-});
-</script>
-<script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
- <script type="text/javascript">
-  function setbg(color){
-    document.getElementById("styled").style.background=color
-    }
-</script>
+  </script>
+  <script type="text/javascript">
+   $(document).scroll(function() {
+      $('#menu').toggle($(this).scrollTop()>1000)
+   });​
+   </script>
 </body>
 </html>
