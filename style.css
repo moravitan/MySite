@@ -92,11 +92,14 @@ body {
   line-height: 0.5;
 	text-align: center;
 	color: #444;
+	overflow: hidden;
+
 }
 
 .section span{
   display: inline-block;
 	position: relative;
+	
 	
 }
 
@@ -108,7 +111,7 @@ body {
   border-top: 3px solid #55d6aa;
   top: 10px;
 	width: 700px;
-	/*overflow: hidden;*/
+
 
 }
 
